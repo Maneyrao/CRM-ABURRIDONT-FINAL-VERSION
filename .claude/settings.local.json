@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\panel-ia-claude\\\\src\"\" && echo \"---ROOT SRC---\" && ls \"c:UsersUsuarioDesktoppanel-ia-claudeaburridont-panelsrc\"\")"
+    ]
+  }
+}
