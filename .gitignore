@@ -1,0 +1,23 @@
+# Dependencias
+node_modules/
+
+# Archivos de producción (el código ya compilado)
+dist/
+dist-ssr/
+build/
+
+# Archivos de variables de entorno (¡SÚPER IMPORTANTE PARA TU SEGURIDAD!)
+.env
+.env.local
+.env.*.local
+
+# Archivos de registro de errores
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Archivos del sistema operativo y editores
+.DS_Store
+.vscode/
+.idea/
