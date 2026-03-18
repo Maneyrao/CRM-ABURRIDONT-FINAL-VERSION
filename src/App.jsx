@@ -248,7 +248,7 @@ return <div><style>{"@import url('https://fonts.googleapis.com/css2?family=Inter
 <div style={{position:"relative",flex:"0 1 260px"}}><input value={gs} onChange={function(e){sGs(e.target.value)}} placeholder="🔍 Buscar..." style={Object.assign({},inp,{fontSize:12})}/>{gsRes.length>0&&<div style={{position:"absolute",top:"100%",left:0,right:0,background:c.sf,border:"1px solid "+c.bd,borderRadius:8,zIndex:50,boxShadow:"0 8px 20px rgba(0,0,0,.1)",marginTop:4}}>{gsRes.map(function(r,i){return <div key={i} onClick={function(){sGs("");if(r.t==="alumno")sVw("alumnos");if(r.t==="grupo"){sVw("grupos")}if(r.t==="lead")sVw("crm")}} style={{padding:"8px 12px",cursor:"pointer",borderBottom:"1px solid "+c.bdL,fontSize:12,fontFamily:F}} onMouseEnter={function(e){e.currentTarget.style.background=c.sfH}} onMouseLeave={function(e){e.currentTarget.style.background=""}}><div style={{color:c.tx,fontWeight:500}}>{r.l}</div><div style={{fontSize:10,color:c.txU}}>{r.s}</div></div>})}</div>}
 </div></div>
 
-{vw==="dashboard"&&<VDash/>}{vw==="alumnos"&&<VAlum/>}{vw==="profesores"&&<VProf/>}{vw==="grupos"&&<VGrup/>}{vw==="horarios"&&<VHor/>}{vw==="pagos"&&<VPag/>}{vw==="crm"&&<VCRM/>}
+{vw==="dashboard"&&VDash()}{vw==="alumnos"&&VAlum()}{vw==="profesores"&&VProf()}{vw==="grupos"&&VGrup()}{vw==="horarios"&&VHor()}{vw==="pagos"&&VPag()}{vw==="crm"&&VCRM()}
 </main>
 
 {/* Modals */}
